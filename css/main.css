@@ -1,0 +1,979 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: Wilkysta;
+  src: url(../fonts/wilkysta.ttf);
+}
+
+html {
+  background: #f0eadc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  width: 1440px;
+  margin-inline: auto;
+  color: #2f2f2f;
+  overflow-x: hidden;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3.625rem;
+  padding-inline: 6.375rem;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  transition: 1s;
+}
+
+#header a {
+  text-decoration-line: none;
+}
+
+#header > a {
+  color: #2f2f2f;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+#header .navigation {
+  display: flex;
+  column-gap: 2rem;
+}
+
+#header .navigation a {
+  font-size: 1.5rem;
+  color: #2f2f2f;
+  font-weight: 400;
+}
+
+#header .navigation a:last-child {
+  padding-right: 5rem;
+}
+
+#header .icons {
+  display: flex;
+  column-gap: 1.875rem;
+}
+
+#header .icons svg:nth-child(1) {
+  width: 1.5325rem;
+  height: 1.875rem;
+}
+
+#header .icons svg:nth-child(2) {
+  width: 1.7725rem;
+  height: 1.875rem;
+}
+
+.header-when-scroll {
+  padding-block: 0.625rem !important;
+  background-color: #a57033 !important;
+}
+
+.header-when-scroll * {
+  color: white !important;
+  fill: white;
+}
+
+#hero {
+  display: flex;
+  padding-inline: 6.375rem;
+}
+
+#hero .left {
+  width: 50%;
+  padding-top: 9.4375rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#hero .left h3 {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 7rem;
+  font-family: Wilkysta;
+}
+
+#hero .left p {
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  font-weight: 400;
+  margin-block: 2.5rem 6rem;
+  width: 33.6875rem;
+}
+
+#hero .left button {
+  width: fit-content;
+  padding: 0.75rem 2.3125rem 1rem 2.25rem;
+  font-size: 1.5rem;
+  background: #754f23;
+  color: #f5f5f5;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+}
+
+#hero .left button svg {
+  margin-left: 1.9375rem;
+  width: 2.125rem;
+  height: 0.875rem;
+}
+
+#hero .right {
+  width: 50%;
+  position: relative;
+}
+
+#hero .right .bg {
+  position: absolute;
+  bottom: -12.3125rem;
+  right: 0.13rem;
+  width: 28.4375rem;
+  height: 42.5rem;
+  background-color: #754f23;
+  border-top-right-radius: 15.625rem;
+  border-top-left-radius: 15.625rem;
+}
+
+#hero .right .bg::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0.13rem;
+  width: 28.4375rem;
+  height: 42.5rem;
+  border-top-right-radius: 15.625rem;
+  border-top-left-radius: 15.625rem;
+  border: 0.125rem solid #754f23;
+  transform: rotateZ(-8.4deg);
+}
+
+#hero .right img {
+  position: absolute;
+  bottom: -12.3125rem;
+  /* right: 0.13rem; */
+  width: 41.875rem;
+  height: 59.5625rem;
+}
+
+#trending-collection {
+  padding-top: 9.125rem;
+  margin-inline: 6.375rem;
+  position: relative;
+  margin-bottom: 5.875rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#trending-collection h4 {
+  width: fit-content;
+  font-size: 4rem;
+  font-family: Wilkysta;
+  font-weight: 400;
+  line-height: 2rem;
+  padding-bottom: 1.3125rem;
+  margin-bottom: 1.5625rem;
+  border-bottom: 0.0625rem solid #2f2f2f;
+}
+
+#trending-collection h4 span {
+  font-family: Wilkysta;
+  font-size: 2.25rem;
+}
+
+#trending-collection > p {
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  width: fit-content;
+  margin-bottom: 0.875rem;
+}
+
+#trending-collection .trending-collection-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+#trending-collection .trending-collection-cards .cards {
+  width: fit-content;
+  border: 0.0625rem solid #754f23;
+  padding: 1.375rem 1.375rem 1.125rem 1.4375rem;
+  border-radius: 1rem;
+}
+
+#trending-collection .trending-collection-cards .cards h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1.875rem 0 2.5rem 0;
+}
+
+#trending-collection .trending-collection-cards .cards div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#trending-collection .trending-collection-cards .cards div p span {
+  font-size: 1.125rem;
+}
+
+#trending-collection
+  .trending-collection-cards
+  .cards
+  div
+  .icons
+  svg:nth-child(1) {
+  margin-right: 2rem;
+}
+
+#trending-collection .trending-collection-cards .card1 img,
+#trending-collection .trending-collection-cards .card3 img {
+  width: 18.375rem;
+  max-width: 294px;
+  height: 21.8125rem;
+  max-height: 349px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 1rem;
+}
+
+#trending-collection .trending-collection-cards .card2 {
+  align-self: center;
+}
+
+#trending-collection .trending-collection-cards .card2 img {
+  width: 25rem;
+  height: 32.8125rem;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 1rem;
+}
+
+#trending-collection .trending-collection-cards .card1 {
+  align-self: flex-end;
+  position: relative;
+  bottom: 1.75rem;
+}
+
+#trending-collection .trending-collection-cards .card3 {
+  align-self: flex-start;
+  position: relative;
+  top: 3.3125rem;
+}
+
+#trending-collection button {
+  width: fit-content;
+  padding: 0.75rem 2.3125rem 1rem 2.25rem;
+  font-size: 1.5rem;
+  background: transparent;
+  color: #754f23;
+  border-radius: 1rem;
+  outline: none;
+  border: 0.0625rem solid #754f23;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1.25rem;
+}
+
+#trending-collection button svg {
+  margin-left: 1.9375rem;
+  width: 2.125rem;
+  height: 0.875rem;
+}
+
+#trending-collection button svg,
+#trending-collection button path {
+  stroke: #754f23;
+}
+
+#summer-collection {
+  margin-inline: 6.375rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#summer-collection h4 {
+  width: fit-content;
+  font-size: 4rem;
+  font-family: Wilkysta;
+  font-weight: 400;
+  line-height: 2rem;
+  padding-bottom: 1.3125rem;
+  margin-bottom: 1.5625rem;
+  border-bottom: 0.0625rem solid #2f2f2f;
+}
+
+#summer-collection h4 span {
+  font-family: Wilkysta;
+  font-size: 2.25rem;
+}
+
+#summer-collection > p {
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  width: fit-content;
+  margin-bottom: 3.0625rem;
+}
+
+#summer-collection .summer-collection-content {
+  display: flex;
+  padding-bottom: 3.125rem;
+  position: relative;
+}
+
+#summer-collection .summer-collection-content .left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#summer-collection .summer-collection-content .left img {
+  width: 25.625rem;
+  height: 32.5625rem;
+  margin: 1.25rem 5.6875rem 2.625rem 3.75rem;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 1rem;
+}
+
+#summer-collection .summer-collection-content .left p {
+  margin-left: 1.125rem;
+  font-size: 1.125rem;
+}
+
+#summer-collection .summer-collection-content .right {
+  width: 50%;
+  margin-left: 4.0625rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#summer-collection .summer-collection-content .right p {
+  margin-left: 1.5rem;
+  font-size: 1.125rem;
+}
+
+#summer-collection .summer-collection-content .right .imgs {
+  padding: 2.25rem 5.4375rem 0 0;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 1rem;
+}
+
+#summer-collection .summer-collection-content .right .imgs img:nth-child(1) {
+  width: 25.8125rem;
+  height: 30.6875rem;
+  margin-left: 7rem;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 1rem;
+}
+
+#summer-collection .summer-collection-content .right .imgs img:nth-child(2) {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 14rem;
+  height: 17.75rem;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 1rem;
+}
+
+#summer-collection button {
+  width: fit-content;
+  padding: 0.75rem 2.3125rem 1rem 2.25rem;
+  font-size: 1.5rem;
+  background: transparent;
+  color: #754f23;
+  border-radius: 1rem;
+  outline: none;
+  border: 0.0625rem solid #754f23;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1.25rem;
+}
+
+#summer-collection button svg {
+  margin-left: 1.9375rem;
+  width: 2.125rem;
+  height: 0.875rem;
+}
+
+#summer-collection button svg,
+#summer-collection button path {
+  stroke: #754f23;
+}
+
+#winter-collection {
+  margin-inline: 6.375rem;
+  padding-top: 11.9375rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#winter-collection h4 {
+  width: fit-content;
+  font-size: 4rem;
+  font-family: Wilkysta;
+  font-weight: 400;
+  line-height: 2rem;
+  padding-bottom: 1.3125rem;
+  margin-bottom: 1.5625rem;
+  border-bottom: 0.0625rem solid #2f2f2f;
+  align-self: flex-end;
+}
+
+#winter-collection h4 span {
+  font-family: Wilkysta;
+  font-size: 2.25rem;
+}
+
+#winter-collection > p {
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  width: fit-content;
+  margin-bottom: 5.25rem;
+  align-self: flex-end;
+}
+
+#winter-collection .winter-collection-content {
+  display: flex;
+}
+
+#winter-collection .winter-collection-content .left {
+  width: 50%;
+}
+
+#winter-collection .winter-collection-content .left p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5625rem;
+}
+
+#winter-collection .winter-collection-content .left .imgs {
+  margin: 1.9375rem 1.0625rem 0 1.25rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#winter-collection .winter-collection-content .left .imgs img:nth-child(1) {
+  width: 19.9375rem;
+  height: 25.3125rem;
+  margin-left: 16rem;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 1rem;
+}
+
+#winter-collection .winter-collection-content .left .imgs img:nth-child(2) {
+  width: 26.75rem;
+  height: 17.75rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+}
+
+#winter-collection .winter-collection-content .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 3.5rem;
+}
+
+#winter-collection .winter-collection-content .right button {
+  width: fit-content;
+  padding: 0.75rem 2.3125rem 1rem 2.25rem;
+  font-size: 1.5rem;
+  background: transparent;
+  color: #754f23;
+  border-radius: 1rem;
+  outline: none;
+  border: 0.0625rem solid #754f23;
+  margin-right: 1.5rem;
+  align-self: flex-end;
+}
+
+#winter-collection .winter-collection-content .right button svg {
+  margin-left: 1.9375rem;
+  width: 2.125rem;
+  height: 0.875rem;
+}
+
+#winter-collection .winter-collection-content .right button svg,
+#winter-collection .winter-collection-content .right button path {
+  stroke: #754f23;
+}
+
+#winter-collection .winter-collection-content .right > p {
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  margin-left: 1.5rem;
+}
+
+#what-our-customers-says {
+  margin-inline: 6.375rem;
+  padding-block: 8.3125rem 11rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#what-our-customers-says h4 {
+  width: fit-content;
+  font-size: 4rem;
+  font-family: Wilkysta;
+  font-weight: 400;
+  line-height: 2rem;
+  margin-bottom: 1.5625rem;
+  border-bottom: 0.0625rem solid #2f2f2f;
+  align-self: flex-end;
+}
+
+#what-our-customers-says h4 span:nth-child(1) {
+  font-family: Wilkysta;
+  font-size: 2.25rem;
+}
+
+#what-our-customers-says h4 span:nth-child(2) {
+  font-family: Wilkysta;
+  white-space: nowrap;
+  line-height: normal;
+}
+
+#what-our-customers-says > p {
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  width: fit-content;
+  align-self: flex-end;
+}
+
+#what-our-customers-says .what-our-customers-says-content {
+  display: flex;
+}
+
+#what-our-customers-says .what-our-customers-says-content .left {
+  display: flex;
+  column-gap: 2.5rem;
+}
+
+#what-our-customers-says .what-our-customers-says-content .left > img {
+  width: 17.75rem;
+  height: 21.75rem;
+  margin-left: 1.25rem;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 1rem;
+}
+
+#what-our-customers-says .what-our-customers-says-content .left .content {
+  display: flex;
+  flex-direction: column;
+}
+
+#what-our-customers-says .what-our-customers-says-content .left .content svg {
+  margin: 2.875rem;
+  margin-left: 0.125rem;
+}
+
+#what-our-customers-says .what-our-customers-says-content .left .content > p {
+  font-size: 1rem;
+}
+
+#what-our-customers-says
+  .what-our-customers-says-content
+  .left
+  .content
+  .customer-info {
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
+
+#what-our-customers-says
+  .what-our-customers-says-content
+  .left
+  .content
+  .customer-info
+  h6 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+#what-our-customers-says
+  .what-our-customers-says-content
+  .left
+  .content
+  .customer-info
+  p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#what-our-customers-says .what-our-customers-says-content .right {
+  padding-inline: 9.4375rem 1.5rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+#what-our-customers-says .what-our-customers-says-content .right .buttons {
+  display: flex;
+  column-gap: 1.75rem;
+}
+
+#what-our-customers-says
+  .what-our-customers-says-content
+  .right
+  .buttons
+  button {
+  outline: none;
+  border: 0.125rem solid #754f23;
+  padding: 1.5rem 1.6875rem;
+  border-radius: 1rem;
+  background: transparent;
+  display: grid;
+  place-content: center;
+}
+
+#what-our-customers-says
+  .what-our-customers-says-content
+  .right
+  .buttons
+  button
+  svg {
+  width: 0.5rem;
+  height: 0.875rem;
+}
+
+#footer {
+  background: #754f23;
+  padding-inline: 6.375rem;
+  padding-block: 3.625rem;
+  color: #f5f5f5;
+  display: flex;
+}
+
+#footer .box {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.875rem;
+  min-width: fit-content;
+}
+
+#footer .box:not(.first) {
+  margin-left: 12rem;
+}
+
+#footer .first h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#footer .first p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#footer .first .social-icons {
+  display: flex;
+  column-gap: 1.25rem;
+  margin-top: 1.375rem;
+}
+
+#footer .first .social-icons svg:nth-child(1) {
+  width: 0.6875rem;
+  height: 1.25rem;
+}
+
+#footer .first .social-icons svg:nth-child(2) {
+  width: 1.25rem;
+  height: 1.1875rem;
+}
+
+#footer .first .social-icons svg:nth-child(3) {
+  width: 1.375rem;
+  height: 1.12125rem;
+}
+
+#footer .first .social-icons svg:nth-child(4) {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+#footer .second p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#footer .third p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 540px) {
+  html {
+    font-size: 70%;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  body > * {
+    width: 100%;
+    padding-inline: 1rem !important;
+  }
+
+  #header .navigation {
+    display: none;
+  }
+
+  #hero {
+    flex-direction: column;
+    position: relative;
+  }
+
+  #hero .left {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  #hero .left > p {
+    width: 100%;
+  }
+
+  #hero .right {
+    display: none;
+  }
+
+  #trending-collection {
+    margin-inline: 0;
+  }
+
+  #trending-collection h4,
+  #trending-collection > p {
+    text-align: center;
+  }
+
+  #trending-collection .trending-collection-cards {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+
+  #trending-collection .trending-collection-cards .cards {
+    display: flex;
+    flex-direction: column;
+    top: 0;
+  }
+
+  #trending-collection .trending-collection-cards .cards img {
+    max-width: 100%;
+    align-self: center;
+    object-fit: contain;
+  }
+
+  #trending-collection button {
+    position: static !important;
+    margin-top: 1rem;
+    align-self: center;
+  }
+
+  #summer-collection {
+    text-align: center;
+    margin-inline: 0;
+  }
+
+  #summer-collection .summer-collection-content {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  #summer-collection .summer-collection-content .left {
+    width: 100%;
+    margin-inline: 0;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #summer-collection .summer-collection-content .left img {
+    margin-inline: 0;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  #summer-collection .summer-collection-content .left p {
+    margin-inline: 0;
+  }
+
+  #summer-collection .summer-collection-content .right {
+    width: 100%;
+    margin-inline: 0;
+  }
+
+  #summer-collection .summer-collection-content .right .imgs {
+    padding-inline: 0;
+  }
+
+  #summer-collection .summer-collection-content .right .imgs img {
+    margin-inline: 0 !important;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  #summer-collection .summer-collection-content .right .imgs img:nth-child(2) {
+    left: 50%;
+    transform: translate(-50%, 30%);
+  }
+
+  #summer-collection .summer-collection-content .right p {
+    margin-inline: 0;
+  }
+
+  #summer-collection button {
+    position: static;
+    align-self: center;
+    margin-top: 10%;
+  }
+
+  #winter-collection {
+    text-align: center;
+    margin-inline: 0;
+  }
+
+  #winter-collection .winter-collection-content {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  #winter-collection .winter-collection-content .left {
+    width: 100%;
+  }
+
+  #winter-collection .winter-collection-content .left .imgs {
+    margin-inline: 0 !important;
+    flex-direction: column;
+  }
+
+  #winter-collection .winter-collection-content .left .imgs img {
+    margin-inline: 0 !important;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  #winter-collection .winter-collection-content .left .imgs img:nth-child(2) {
+    position: static;
+    transform: translateY(-50%);
+  }
+
+  #winter-collection .winter-collection-content .right {
+    width: 100%;
+    flex-direction: column-reverse;
+    transform: translateY(-35%);
+  }
+
+  #what-our-customers-says {
+    margin-inline: 0;
+  }
+
+  #what-our-customers-says .what-our-customers-says-content {
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+
+  #what-our-customers-says .what-our-customers-says-content .left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  #what-our-customers-says .what-our-customers-says-content .left img {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  #what-our-customers-says .what-our-customers-says-content .right {
+    width: 100%;
+    padding-inline: 0;
+    justify-content: center;
+  }
+
+  #footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 3rem;
+  }
+
+  #footer .box {
+    margin-inline: 0 !important;
+  }
+
+  #footer .first {
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 70%;
+  }
+
+  body {
+    width: calc(1020px - 17px);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  html {
+    font-size: 90%;
+  }
+
+  body {
+    width: calc(1280px - 17px);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  html {
+    font-size: 100%;
+  }
+
+  body {
+    width: calc(1440px - 17px);
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  html {
+    font-size: 120%;
+  }
+
+  body {
+    width: calc(1920px - 17px);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
