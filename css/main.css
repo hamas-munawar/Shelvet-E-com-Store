@@ -728,7 +728,7 @@ body {
 
 @media only screen and (min-width: 280px) and (max-width: 540px) {
   img {
-    object-fit: cover;
+    object-fit: cover !important;
   }
 
   html {
