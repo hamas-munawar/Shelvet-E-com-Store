@@ -1,440 +1,738 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <title>Sehlvet — Premium Womenswear</title>
-</head>
-<body>
-
-  <!-- Preloader -->
-  <div id="preloader" class="preloader">
-    <div class="preloader-content">
-      <h2 class="preloader-logo">Sehlvet.</h2>
-      <div class="preloader-counter"><span id="loader-count">0</span>%</div>
-    </div>
-  </div>
-
-  <!-- Custom Cursor -->
-  <div id="custom-cursor" class="custom-cursor"></div>
-  <div id="cursor-follower" class="cursor-follower"></div>
-
-  <!-- Top Marquee -->
-  <div class="marquee-bar">
-    <div class="marquee-track">
-      <span>Complimentary Global Shipping on Orders over $200</span>
-      <span>•</span>
-      <span>Discover the New Autumn Collection</span>
-      <span>•</span>
-      <span>Sustainable Premium Fabrics</span>
-      <span>•</span>
-      <span>Complimentary Global Shipping on Orders over $200</span>
-      <span>•</span>
-      <span>Discover the New Autumn Collection</span>
-      <span>•</span>
-      <span>Sustainable Premium Fabrics</span>
-    </div>
-  </div>
-
-  <!-- HEADER -->
-  <header id="header">
-    <div class="nav-container">
-      <a href="/" id="logo">Sehlvet.</a>
-      <nav class="navigation">
-        <a href="#hero" class="nav-link">Home</a>
-        <div class="dropdown-wrapper">
-          <a href="#trending" class="nav-link">Shop <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-          <div class="dropdown-menu">
-            <a href="#">Dresses</a>
-            <a href="#">Outerwear</a>
-            <a href="#">Accessories</a>
-            <a href="#">Sale</a>
-          </div>
-        </div>
-        <a href="#lookbook" class="nav-link">Lookbook</a>
-        <a href="#footer" class="nav-link">Contact</a>
-      </nav>
-      <div class="header-tools">
-        <button class="tool-btn" id="toggle-dark-mode" aria-label="Toggle Dark Mode">
-          <svg class="moon-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-          <svg class="sun-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-        </button>
-        <button class="tool-btn" id="open-search" aria-label="Search">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-        </button>
-        <button class="tool-btn cart-btn" id="open-cart" aria-label="Cart">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-          <span class="cart-badge" id="cart-badge">0</span>
-        </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sehlvet — Premium Menswear</title>
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+      <div class="preloader-content">
+        <h2 class="preloader-logo">Sehlvet.</h2>
+        <div class="preloader-counter"><span id="loader-count">0</span>%</div>
       </div>
     </div>
-  </header>
 
-  <!-- HERO SECTION -->
-  <section id="hero" class="hero-editorial">
-    <div class="hero-bg-layer"></div>
-    <div class="hero-container">
-      
-      <!-- Central Image Focus -->
-      <div class="hero-center">
-        <div class="hero-img-box">
-          <div class="hero-anim-wrapper" style="width: 100%; height: 100%;">
-            <div class="parallax-box" style="width: 100%; height: 100%;">
-              <img src="imgs/Elegent-Man.png" alt="Couture Fashion" class="hero-img" style="object-fit: cover; width: 100%; height: 100%;" />
+    <!-- Custom Cursor -->
+    <div id="custom-cursor" class="custom-cursor"></div>
+    <div id="cursor-follower" class="cursor-follower"></div>
+
+    <!-- Top Marquee -->
+    <div class="marquee-bar">
+      <div class="marquee-track">
+        <span>Complimentary Global Shipping on Orders over $200</span>
+        <span>•</span>
+        <span>Discover the New Autumn Collection</span>
+        <span>•</span>
+        <span>Sustainable Premium Fabrics</span>
+        <span>•</span>
+        <span>Complimentary Global Shipping on Orders over $200</span>
+        <span>•</span>
+        <span>Discover the New Autumn Collection</span>
+        <span>•</span>
+        <span>Sustainable Premium Fabrics</span>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header id="header">
+      <div class="nav-container">
+        <a href="/" id="logo">Sehlvet.</a>
+        <nav class="navigation">
+          <a href="#hero" class="nav-link">Home</a>
+          <div class="dropdown-wrapper">
+            <a href="#trending" class="nav-link"
+              >Shop
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline></svg
+            ></a>
+            <div class="dropdown-menu">
+              <a href="#">Dresses</a>
+              <a href="#">Outerwear</a>
+              <a href="#">Accessories</a>
+              <a href="#">Sale</a>
+            </div>
+          </div>
+          <a href="#lookbook" class="nav-link">Lookbook</a>
+          <a href="#footer" class="nav-link">Contact</a>
+        </nav>
+        <div class="header-tools">
+          <button
+            class="tool-btn"
+            id="toggle-dark-mode"
+            aria-label="Toggle Dark Mode"
+          >
+            <svg
+              class="moon-icon"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg
+              class="sun-icon"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              style="display: none"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+          <button class="tool-btn" id="open-search" aria-label="Search">
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+          <button class="tool-btn cart-btn" id="open-cart" aria-label="Cart">
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+              ></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="cart-badge" id="cart-badge">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-editorial">
+      <div class="hero-bg-layer"></div>
+      <div class="hero-container">
+        <!-- Central Image Focus -->
+        <div class="hero-center">
+          <div class="hero-img-box">
+            <div class="hero-anim-wrapper" style="width: 100%; height: 100%">
+              <div class="parallax-box" style="width: 100%; height: 100%">
+                <img
+                  src="imgs/Elegent-Man.png"
+                  alt="Couture Fashion"
+                  class="hero-img"
+                  style="object-fit: cover; width: 100%; height: 100%"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Typography Overlays -->
+        <div class="hero-titles">
+          <h1 class="title-top">REFINED</h1>
+          <h1 class="title-bottom"><em>essentials</em></h1>
+        </div>
+
+        <!-- Floating Details -->
+        <div class="hero-details hero-detail-left">
+          <span class="season-tag">Spring / Summer '24</span>
+          <p class="hero-desc">
+            Discover the intersection of minimalist design and premium
+            craftsmanship.
+          </p>
+          <button
+            class="btn-primary"
+            onclick="
+              window.scrollTo({
+                top: document.getElementById('trending').offsetTop,
+                behavior: 'smooth',
+              })
+            "
+          >
+            Explore Collection <span class="arrow">→</span>
+          </button>
+        </div>
+
+        <div class="hero-details hero-detail-right">
+          <!-- A circular rotating text badge using SVG -->
+          <div class="circular-badge">
+            <svg viewBox="0 0 100 100" width="120" height="120">
+              <defs>
+                <path
+                  id="circlePath"
+                  d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0"
+                />
+              </defs>
+              <text fill="var(--text-main)">
+                <textPath
+                  href="#circlePath"
+                  font-size="11.5"
+                  font-family="'Outfit', sans-serif"
+                  letter-spacing="2.5"
+                >
+                  • TIMELESS ELEGANCE • EST 2023
+                </textPath>
+              </text>
+            </svg>
+            <div class="badge-center-dot"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRENDING COLLECTION -->
+    <section id="trending" class="section">
+      <div class="container">
+        <div class="section-header align-center">
+          <h2>Curated <em>Selections</em></h2>
+          <p>Explore this week's most sought-after pieces.</p>
+        </div>
+
+        <!-- Filter Pills -->
+        <div class="filter-pills">
+          <button class="pill active" data-filter="all">All Items</button>
+          <button class="pill" data-filter="outerwear">Outerwear</button>
+          <button class="pill" data-filter="essentials">Essentials</button>
+        </div>
+
+        <div class="grid-products">
+          <!-- Product 1 -->
+          <div class="product-card" data-category="essentials">
+            <div class="img-wrapper">
+              <span class="tag">Bestseller</span>
+              <img src="imgs/tcp1.png" alt="Formal Shirt" />
+              <div class="hover-actions">
+                <button
+                  class="quick-view-btn"
+                  onclick="
+                    openQuickView(
+                      'Formal Shirt For Woman',
+                      '$25.38',
+                      'imgs/tcp1.png',
+                      'Perfectly tailored formal wear for the modern professional.'
+                    )
+                  "
+                >
+                  Quick View
+                </button>
+                <button
+                  class="add-cart-btn"
+                  onclick="addToCart('Formal Shirt', 25.38, 'imgs/tcp1.png')"
+                >
+                  Add to Bag
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <a href="#" class="product-title">Formal Shirt For Woman</a>
+              <span class="product-price">$25.38</span>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card" data-category="essentials">
+            <div class="img-wrapper">
+              <img src="imgs/tcp2.png" alt="Exercise outfit" />
+              <div class="hover-actions">
+                <button
+                  class="quick-view-btn"
+                  onclick="
+                    openQuickView(
+                      'Black & Gray Exercise Outfit',
+                      '$08.50',
+                      'imgs/tcp2.png',
+                      'Breathable athletic wear for optimal performance.'
+                    )
+                  "
+                >
+                  Quick View
+                </button>
+                <button
+                  class="add-cart-btn"
+                  onclick="addToCart('Exercise Outfit', 8.5, 'imgs/tcp2.png')"
+                >
+                  Add to Bag
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <a href="#" class="product-title">Black & Gray Exercise Outfit</a>
+              <span class="product-price">$08.50</span>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card" data-category="outerwear">
+            <div class="img-wrapper">
+              <img src="imgs/tcp3.png" alt="Yellow Jacket" />
+              <div class="hover-actions">
+                <button
+                  class="quick-view-btn"
+                  onclick="
+                    openQuickView(
+                      'Yellow Jacket For Winter',
+                      '$14.55',
+                      'imgs/tcp3.png',
+                      'Stay warm with this chic padded winter essential.'
+                    )
+                  "
+                >
+                  Quick View
+                </button>
+                <button
+                  class="add-cart-btn"
+                  onclick="addToCart('Yellow Jacket', 14.55, 'imgs/tcp3.png')"
+                >
+                  Add to Bag
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <a href="#" class="product-title">Yellow Jacket For Winter</a>
+              <span class="product-price">$14.55</span>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Typography Overlays -->
-      <div class="hero-titles">
-        <h1 class="title-top">REFINED</h1>
-        <h1 class="title-bottom"><em>essentials</em></h1>
-      </div>
-      
-      <!-- Floating Details -->
-      <div class="hero-details hero-detail-left">
-        <span class="season-tag">Spring / Summer '24</span>
-        <p class="hero-desc">Discover the intersection of minimalist design and premium craftsmanship.</p>
-        <button class="btn-primary" onclick="window.scrollTo({top: document.getElementById('trending').offsetTop, behavior: 'smooth'})">
-          Explore Collection <span class="arrow">→</span>
-        </button>
-      </div>
-
-      <div class="hero-details hero-detail-right">
-        <!-- A circular rotating text badge using SVG -->
-        <div class="circular-badge">
-          <svg viewBox="0 0 100 100" width="120" height="120">
-            <defs>
-              <path id="circlePath" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" />
-            </defs>
-            <text fill="var(--text-main)">
-              <textPath href="#circlePath" font-size="11.5" font-family="'Outfit', sans-serif" letter-spacing="2.5">
-                • TIMELESS ELEGANCE • EST 2023 
-              </textPath>
-            </text>
-          </svg>
-          <div class="badge-center-dot"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TRENDING COLLECTION -->
-  <section id="trending" class="section">
-    <div class="container">
-      <div class="section-header align-center">
-        <h2>Curated <em>Selections</em></h2>
-        <p>Explore this week's most sought-after pieces.</p>
-      </div>
-
-      <!-- Filter Pills -->
-      <div class="filter-pills">
-        <button class="pill active" data-filter="all">All Items</button>
-        <button class="pill" data-filter="outerwear">Outerwear</button>
-        <button class="pill" data-filter="essentials">Essentials</button>
-      </div>
-      
-      <div class="grid-products">
-        <!-- Product 1 -->
-        <div class="product-card" data-category="essentials">
-          <div class="img-wrapper">
-            <span class="tag">Bestseller</span>
-            <img src="imgs/tcp1.png" alt="Formal Shirt" />
-            <div class="hover-actions">
-              <button class="quick-view-btn" onclick="openQuickView('Formal Shirt For Woman', '$25.38', 'imgs/tcp1.png', 'Perfectly tailored formal wear for the modern professional.')">Quick View</button>
-              <button class="add-cart-btn" onclick="addToCart('Formal Shirt', 25.38, 'imgs/tcp1.png')">Add to Bag</button>
-            </div>
-          </div>
-          <div class="product-info">
-            <a href="#" class="product-title">Formal Shirt For Woman</a>
-            <span class="product-price">$25.38</span>
-          </div>
-        </div>
-
-        <!-- Product 2 -->
-        <div class="product-card" data-category="essentials">
-          <div class="img-wrapper">
-            <img src="imgs/tcp2.png" alt="Exercise outfit" />
-            <div class="hover-actions">
-              <button class="quick-view-btn" onclick="openQuickView('Black & Gray Exercise Outfit', '$08.50', 'imgs/tcp2.png', 'Breathable athletic wear for optimal performance.')">Quick View</button>
-              <button class="add-cart-btn" onclick="addToCart('Exercise Outfit', 8.50, 'imgs/tcp2.png')">Add to Bag</button>
-            </div>
-          </div>
-          <div class="product-info">
-            <a href="#" class="product-title">Black & Gray Exercise Outfit</a>
-            <span class="product-price">$08.50</span>
-          </div>
-        </div>
-
-        <!-- Product 3 -->
-        <div class="product-card" data-category="outerwear">
-          <div class="img-wrapper">
-            <img src="imgs/tcp3.png" alt="Yellow Jacket" />
-            <div class="hover-actions">
-              <button class="quick-view-btn" onclick="openQuickView('Yellow Jacket For Winter', '$14.55', 'imgs/tcp3.png', 'Stay warm with this chic padded winter essential.')">Quick View</button>
-              <button class="add-cart-btn" onclick="addToCart('Yellow Jacket', 14.55, 'imgs/tcp3.png')">Add to Bag</button>
-            </div>
-          </div>
-          <div class="product-info">
-            <a href="#" class="product-title">Yellow Jacket For Winter</a>
-            <span class="product-price">$14.55</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- LOOKBOOK SECTION -->
-  <section id="lookbook" class="section bg-soft">
-    <div class="container">
-      <div class="lookbook-layout">
-        <div class="lb-left">
-          <div class="lb-text-box">
-            <h2>Summer <em>Aesthetics</em></h2>
-            <p>Embody the spirit of the season with airy fabrics and loose silhouettes designed to breathe.</p>
-            <a href="#shop" class="link-animate">Shop Summer →</a>
-          </div>
-          <div class="lb-img-box parallax-box aspect-tall">
-            <img src="imgs/scp1.png" alt="Summer Edit" />
-          </div>
-        </div>
-        
-        <div class="lb-right">
-          <div class="lb-img-box aspect-wide">
-            <img src="imgs/scp2.png" alt="Details" />
-          </div>
-          <div class="lb-grid-mini">
-            <div class="lb-img-box aspect-sq parallax-box">
-              <img src="imgs/scp3.png" alt="Detail 2" />
-            </div>
+    <!-- LOOKBOOK SECTION -->
+    <section id="lookbook" class="section bg-soft">
+      <div class="container">
+        <div class="lookbook-layout">
+          <div class="lb-left">
             <div class="lb-text-box">
-              <h3>Light & Form</h3>
-              <p>Experience the finest weaves crafted in our Italian ateliers.</p>
+              <h2>Summer <em>Aesthetics</em></h2>
+              <p>
+                Embody the spirit of the season with airy fabrics and loose
+                silhouettes designed to breathe.
+              </p>
+              <a href="#shop" class="link-animate">Shop Summer →</a>
+            </div>
+            <div class="lb-img-box parallax-box aspect-tall">
+              <img src="imgs/scp1.png" alt="Summer Edit" />
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- FEATURES / BENEFITS BANNER -->
-  <section class="section border-top">
-    <div class="container">
-      <div class="features-grid">
-        <div class="feature-item">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-          <h4>Express Delivery</h4>
-          <p>Global 2-day priority shipping available.</p>
-        </div>
-        <div class="feature-item">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>
-          <h4>30-Day Returns</h4>
-          <p>Not perfect? Return it easily within 30 days.</p>
-        </div>
-        <div class="feature-item">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-          <h4>Sustainable Fabric</h4>
-          <p>Ethically sourced and produced materials.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS SLIDER -->
-  <section class="section bg-dark text-light" id="reviews">
-    <div class="container container-sm">
-      <div class="section-header align-center">
-        <h2>Client <em>Experiences</em></h2>
-      </div>
-      
-      <div class="slider-wrapper">
-        <div class="slides-container" id="testi-slides">
-          <div class="slide active">
-            <svg class="quote-icon" width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-            <p class="review-text">"Sehlvet provided me with the most astonishing quality. Fast shipping, beautiful eco-friendly packaging, and garments that fit immaculately."</p>
-            <div class="client-box">
-              <img src="imgs/wocsp1.png" alt="Jane B" />
-              <div>
-                <h5>Jane Bennet</h5>
-                <span>Fashion Editor</span>
+          <div class="lb-right">
+            <div class="lb-img-box aspect-wide">
+              <img src="imgs/scp2.png" alt="Details" />
+            </div>
+            <div class="lb-grid-mini">
+              <div class="lb-img-box aspect-sq parallax-box">
+                <img src="imgs/scp3.png" alt="Detail 2" />
               </div>
-            </div>
-          </div>
-          <div class="slide">
-            <svg class="quote-icon" width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-            <p class="review-text">"An absolute breath of fresh air in modern retail. The winter coats are heavy, luxurious, and instantly turn heads. Will be returning!"</p>
-            <div class="client-box">
-              <img src="imgs/wcp1.png" alt="Sarah T" />
-              <div>
-                <h5>Sarah Thomas</h5>
-                <span>Art Director</span>
+              <div class="lb-text-box">
+                <h3>Light & Form</h3>
+                <p>
+                  Experience the finest weaves crafted in our Italian ateliers.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="slider-controls">
-          <button id="prev-slide">←</button>
-          <div class="dots" id="testi-dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
+      </div>
+    </section>
+
+    <!-- FEATURES / BENEFITS BANNER -->
+    <section class="section border-top">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-item">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <path
+                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+              ></path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+            <h4>Express Delivery</h4>
+            <p>Global 2-day priority shipping available.</p>
           </div>
-          <button id="next-slide">→</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- INSTAGRAM GRID -->
-  <section class="section border-top" id="instagram-feed">
-    <div class="container container-sm">
-      <div class="section-header align-center">
-        <h2>As Seen <em>On You</em></h2>
-        <p>Tag @Sehlvet to be featured on our global gallery.</p>
-      </div>
-      <div class="ig-masonry">
-        <div class="ig-item"><img src="imgs/tcp1.png" alt="IG Post"><div class="ig-overlay">@style.icon</div></div>
-        <div class="ig-item"><img src="imgs/scp1.png" alt="IG Post"><div class="ig-overlay">@fashion_daily</div></div>
-        <div class="ig-item"><img src="imgs/wocsp1.png" alt="IG Post"><div class="ig-overlay">@jane.bennet</div></div>
-        <div class="ig-item"><img src="imgs/tcp2.png" alt="IG Post"><div class="ig-overlay">@minimalist</div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer id="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="brand-col">
-          <a href="/" class="footer-logo">Sehlvet.</a>
-          <p>Elevating womenswear through unparalleled craftsmanship and sophisticated design language since 2023.</p>
-          <div class="socials">
-            <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
-            <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+          <div class="feature-item">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 8v4l3 3"></path>
+            </svg>
+            <h4>30-Day Returns</h4>
+            <p>Not perfect? Return it easily within 30 days.</p>
           </div>
-        </div>
-        
-        <div class="links-col">
-          <h4>Customer Care</h4>
-          <a href="#">Size Guide</a>
-          <a href="#">Shipping & Returns</a>
-          <a href="#">Track Order</a>
-          <a href="#">Contact Us</a>
-        </div>
-        
-        <div class="links-col">
-          <h4>Discover</h4>
-          <a href="#">Our Story</a>
-          <a href="#">Sustainability</a>
-          <a href="#">Careers</a>
-          <a href="#">Store Locator</a>
-        </div>
-
-        <div class="newsletter-col">
-          <h4>The List</h4>
-          <p>Sign up to receive 15% off your first order, exclusive access to sales, and new arrivals.</p>
-          <form class="nl-form" onsubmit="event.preventDefault(); alert('Subscribed to newsletter!');">
-            <input type="email" placeholder="Email Address" required />
-            <button type="submit">→</button>
-          </form>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2024 Sehlvet. All Rights Reserved. Designed by Hamas Munawar.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- OFFCANVAS CART DRAW -->
-  <div class="overlay" id="cart-overlay"></div>
-  <div class="cart-drawer" id="cart-drawer">
-    <div class="drawer-header">
-      <h2>Shopping Bag (<span id="drawer-count">0</span>)</h2>
-      <button class="close-drawer" id="close-cart">✕</button>
-    </div>
-    <div class="drawer-body" id="cart-items-wrapper">
-      <div class="empty-cart-msg">Your bag is currently empty.</div>
-    </div>
-    <div class="drawer-footer">
-      <div class="cart-total-line">
-        <span>Subtotal</span>
-        <span id="drawer-total">$0.00</span>
-      </div>
-      <p class="taxes-msg">Taxes and shipping calculated at checkout.</p>
-      <button class="btn-primary w-100" id="checkout-btn" disabled>Proceed to Checkout</button>
-    </div>
-  </div>
-
-  <!-- QUICK VIEW MODAL -->
-  <div class="overlay" id="qv-overlay"></div>
-  <div class="qv-modal" id="qv-modal">
-    <button class="close-modal" id="close-qv">✕</button>
-    <div class="qv-content">
-      <div class="qv-img">
-        <img id="qv-image" src="" alt="Product" />
-      </div>
-      <div class="qv-details">
-        <h2 id="qv-title">Product Title</h2>
-        <p class="qv-price" id="qv-price">$0.00</p>
-        <p class="qv-desc" id="qv-desc">Description goes here.</p>
-        
-        <div class="qv-selectors">
-          <div class="size-header">
-            <label>Size</label>
-            <button class="size-guide-toggle" id="open-size-guide">Size Guide</button>
-          </div>
-          <div class="size-options">
-            <button class="size-btn">S</button>
-            <button class="size-btn active">M</button>
-            <button class="size-btn">L</button>
+          <div class="feature-item">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              ></path>
+            </svg>
+            <h4>Sustainable Fabric</h4>
+            <p>Ethically sourced and produced materials.</p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <button class="btn-primary w-100" id="qv-add-btn">Add to Bag</button>
+    <!-- TESTIMONIALS SLIDER -->
+    <section class="section bg-dark text-light" id="reviews">
+      <div class="container container-sm">
+        <div class="section-header align-center">
+          <h2>Client <em>Experiences</em></h2>
+        </div>
 
-        <!-- Nested Size Guide Table -->
-        <div class="size-guide-pane" id="size-guide-pane">
-          <div class="size-guide-header">
-            <h3>Size Guide</h3>
-            <button id="close-size-guide" aria-label="close">✕</button>
+        <div class="slider-wrapper">
+          <div class="slides-container" id="testi-slides">
+            <div class="slide active">
+              <svg
+                class="quote-icon"
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"
+                />
+              </svg>
+              <p class="review-text">
+                "Sehlvet provided me with the most astonishing quality. Fast
+                shipping, beautiful eco-friendly packaging, and garments that
+                fit immaculately."
+              </p>
+              <div class="client-box">
+                <img src="imgs/wocsp1.png" alt="Jane B" />
+                <div>
+                  <h5>Jane Bennet</h5>
+                  <span>Fashion Editor</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <svg
+                class="quote-icon"
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"
+                />
+              </svg>
+              <p class="review-text">
+                "An absolute breath of fresh air in modern retail. The winter
+                coats are heavy, luxurious, and instantly turn heads. Will be
+                returning!"
+              </p>
+              <div class="client-box">
+                <img src="imgs/wcp1.png" alt="Sarah T" />
+                <div>
+                  <h5>Sarah Thomas</h5>
+                  <span>Art Director</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <table class="size-table">
-            <tr><th>Size</th><th>Bust</th><th>Waist</th><th>Hips</th></tr>
-            <tr><td>S</td><td>34"</td><td>26"</td><td>36"</td></tr>
-            <tr><td>M</td><td>36"</td><td>28"</td><td>38"</td></tr>
-            <tr><td>L</td><td>38"</td><td>30"</td><td>40"</td></tr>
-          </table>
+          <div class="slider-controls">
+            <button id="prev-slide">←</button>
+            <div class="dots" id="testi-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+            </div>
+            <button id="next-slide">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTAGRAM GRID -->
+    <section class="section border-top" id="instagram-feed">
+      <div class="container container-sm">
+        <div class="section-header align-center">
+          <h2>As Seen <em>On You</em></h2>
+          <p>Tag @Sehlvet to be featured on our global gallery.</p>
+        </div>
+        <div class="ig-masonry">
+          <div class="ig-item">
+            <img src="imgs/tcp1.png" alt="IG Post" />
+            <div class="ig-overlay">@style.icon</div>
+          </div>
+          <div class="ig-item">
+            <img src="imgs/scp1.png" alt="IG Post" />
+            <div class="ig-overlay">@fashion_daily</div>
+          </div>
+          <div class="ig-item">
+            <img src="imgs/wocsp1.png" alt="IG Post" />
+            <div class="ig-overlay">@jane.bennet</div>
+          </div>
+          <div class="ig-item">
+            <img src="imgs/tcp2.png" alt="IG Post" />
+            <div class="ig-overlay">@minimalist</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="brand-col">
+            <a href="/" class="footer-logo">Sehlvet.</a>
+            <p>
+              Elevating Menswear through unparalleled craftsmanship and
+              sophisticated design language since 2023.
+            </p>
+            <div class="socials">
+              <a href="#"
+                ><svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  ></path></svg
+              ></a>
+              <a href="#"
+                ><svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg
+              ></a>
+            </div>
+          </div>
+
+          <div class="links-col">
+            <h4>Customer Care</h4>
+            <a href="#">Size Guide</a>
+            <a href="#">Shipping & Returns</a>
+            <a href="#">Track Order</a>
+            <a href="#">Contact Us</a>
+          </div>
+
+          <div class="links-col">
+            <h4>Discover</h4>
+            <a href="#">Our Story</a>
+            <a href="#">Sustainability</a>
+            <a href="#">Careers</a>
+            <a href="#">Store Locator</a>
+          </div>
+
+          <div class="newsletter-col">
+            <h4>The List</h4>
+            <p>
+              Sign up to receive 15% off your first order, exclusive access to
+              sales, and new arrivals.
+            </p>
+            <form
+              class="nl-form"
+              onsubmit="
+                event.preventDefault();
+                alert('Subscribed to newsletter!');
+              "
+            >
+              <input type="email" placeholder="Email Address" required />
+              <button type="submit">→</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2024 Sehlvet. All Rights Reserved. Designed by Hamas Munawar.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- OFFCANVAS CART DRAW -->
+    <div class="overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+      <div class="drawer-header">
+        <h2>Shopping Bag (<span id="drawer-count">0</span>)</h2>
+        <button class="close-drawer" id="close-cart">✕</button>
+      </div>
+      <div class="drawer-body" id="cart-items-wrapper">
+        <div class="empty-cart-msg">Your bag is currently empty.</div>
+      </div>
+      <div class="drawer-footer">
+        <div class="cart-total-line">
+          <span>Subtotal</span>
+          <span id="drawer-total">$0.00</span>
+        </div>
+        <p class="taxes-msg">Taxes and shipping calculated at checkout.</p>
+        <button class="btn-primary w-100" id="checkout-btn" disabled>
+          Proceed to Checkout
+        </button>
+      </div>
+    </div>
+
+    <!-- QUICK VIEW MODAL -->
+    <div class="overlay" id="qv-overlay"></div>
+    <div class="qv-modal" id="qv-modal">
+      <button class="close-modal" id="close-qv">✕</button>
+      <div class="qv-content">
+        <div class="qv-img">
+          <img id="qv-image" src="" alt="Product" />
+        </div>
+        <div class="qv-details">
+          <h2 id="qv-title">Product Title</h2>
+          <p class="qv-price" id="qv-price">$0.00</p>
+          <p class="qv-desc" id="qv-desc">Description goes here.</p>
+
+          <div class="qv-selectors">
+            <div class="size-header">
+              <label>Size</label>
+              <button class="size-guide-toggle" id="open-size-guide">
+                Size Guide
+              </button>
+            </div>
+            <div class="size-options">
+              <button class="size-btn">S</button>
+              <button class="size-btn active">M</button>
+              <button class="size-btn">L</button>
+            </div>
+          </div>
+
+          <button class="btn-primary w-100" id="qv-add-btn">Add to Bag</button>
+
+          <!-- Nested Size Guide Table -->
+          <div class="size-guide-pane" id="size-guide-pane">
+            <div class="size-guide-header">
+              <h3>Size Guide</h3>
+              <button id="close-size-guide" aria-label="close">✕</button>
+            </div>
+            <table class="size-table">
+              <tr>
+                <th>Size</th>
+                <th>Bust</th>
+                <th>Waist</th>
+                <th>Hips</th>
+              </tr>
+              <tr>
+                <td>S</td>
+                <td>34"</td>
+                <td>26"</td>
+                <td>36"</td>
+              </tr>
+              <tr>
+                <td>M</td>
+                <td>36"</td>
+                <td>28"</td>
+                <td>38"</td>
+              </tr>
+              <tr>
+                <td>L</td>
+                <td>38"</td>
+                <td>30"</td>
+                <td>40"</td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- SEARCH OVERLAY -->
-  <div class="search-overlay" id="search-overlay">
-    <button class="close-search" id="close-search">✕</button>
-    <div class="search-container">
-      <h2>What are you looking for?</h2>
-      <div class="search-input-wrapper">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-        <input type="text" placeholder="Search products, collections..." id="search-input-field" />
-      </div>
-      <div class="popular-searches">
-        <span>Popular:</span>
-        <a href="#">Dresses</a>
-        <a href="#">Outerwear</a>
-        <a href="#">Sale</a>
+    <!-- SEARCH OVERLAY -->
+    <div class="search-overlay" id="search-overlay">
+      <button class="close-search" id="close-search">✕</button>
+      <div class="search-container">
+        <h2>What are you looking for?</h2>
+        <div class="search-input-wrapper">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input
+            type="text"
+            placeholder="Search products, collections..."
+            id="search-input-field"
+          />
+        </div>
+        <div class="popular-searches">
+          <span>Popular:</span>
+          <a href="#">Dresses</a>
+          <a href="#">Outerwear</a>
+          <a href="#">Sale</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- TOAST ALERTS -->
-  <div id="toast" class="toast">Action Successful</div>
+    <!-- TOAST ALERTS -->
+    <div id="toast" class="toast">Action Successful</div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
-  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
-  <script src="js/app.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>

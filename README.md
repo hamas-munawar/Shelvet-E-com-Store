@@ -1,6 +1,6 @@
-# Sehlvet - Women's Clothing E-commerce Store
+# Sehlvet - Men's Clothing E-commerce Store
 
-A modern, responsive e-commerce website for women's clothing featuring elegant design, smooth animations, and an intuitive user interface.
+A modern, responsive e-commerce website for men's clothing featuring elegant design, smooth animations, and an intuitive user interface.
 
 ## 🌟 Features
 
@@ -47,12 +47,14 @@ Shelvet-E-com-Store/
 ## 🎨 Design Highlights
 
 ### Color Scheme
+
 - **Background**: Warm beige (#f0eadc)
 - **Primary Text**: Dark gray (#2f2f2f)
 - **Accent**: Brown (#754F23, #a57033)
 - **Secondary**: Light gray (#DDD9D6)
 
 ### Sections
+
 1. **Header**: Sticky navigation with logo and menu items
 2. **Hero**: Eye-catching banner with call-to-action
 3. **Trending Collections**: Featured products with pricing
@@ -64,6 +66,7 @@ Shelvet-E-com-Store/
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Modern web browser (Chrome, Firefox, Safari, Edge)
 - Local web server (optional, for best performance)
 
@@ -72,6 +75,7 @@ Shelvet-E-com-Store/
 1. **Clone or download** the project files
 2. **Open** `index.html` in your web browser
 3. **Or serve** using a local web server:
+
    ```bash
    # Using Python
    python -m http.server 8000
@@ -93,18 +97,21 @@ Shelvet-E-com-Store/
 ## 🎯 Key Features Breakdown
 
 ### Animations
+
 - **Scroll-triggered animations** using GSAP ScrollTrigger
 - **Smooth transitions** for page elements
 - **Header transformation** on scroll
 - **Staggered card animations** in product sections
 
 ### Interactive Elements
+
 - **Sticky header** with scroll-based styling changes
 - **Hover effects** on buttons and cards
 - **Smooth scrolling** between sections
 - **Responsive navigation** menu
 
 ### Product Showcase
+
 - **Trending Collections**: 3 featured items with prices
 - **Seasonal Collections**: Summer and Winter themed sections
 - **Product Cards**: Image, title, price, and action buttons
@@ -113,30 +120,35 @@ Shelvet-E-com-Store/
 ## 🔧 Customization
 
 ### Changing Colors
+
 Edit the CSS variables in `css/main.css`:
+
 ```css
 :root {
   --primary-bg: #f0eadc;
   --text-color: #2f2f2f;
-  --accent-color: #754F23;
+  --accent-color: #754f23;
 }
 ```
 
 ### Adding Products
+
 1. Add product images to the `imgs/` folder
 2. Update the HTML structure in `index.html`
 3. Adjust animations in `js/app.js` if needed
 
 ### Modifying Animations
+
 Customize GSAP animations in `js/app.js`:
+
 ```javascript
 gsap.from(".element", {
   y: "100%",
   duration: 1,
   scrollTrigger: {
     trigger: ".trigger-element",
-    start: "top 80%"
-  }
+    start: "top 80%",
+  },
 });
 ```
 
